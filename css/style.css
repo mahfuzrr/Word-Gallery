@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+:root{
+    --primary: #0170ff;
+    --bg: #f0f7ff;
+    --black:  #3d3d3d;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#main{
+    height: calc(100vh - calc(100vh - 100%));
+    width: 100%;
+    background-color: var(--bg);
+    position: fixed;
+}
+
+.container-fluid{
+    overflow: hidden;
+}
+
+#allContent{
+    width: 100%;
+    height: 100%;
+}
+
+#headImage{
+    display: none;
+}
+
+#leftCol{
+    background-image: url("../photo/2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#leftCol h1{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+#w-g{
+    color: var(--bg);
+    font-size: 50px;
+    font-weight: 500px;
+}
+
+#inside-img{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 70%;
+    grid-gap: 15px;
+}
+
+#inside-img img{
+    width: 100%;
+    pointer-events: none;
+}
+
+#rightCol > div{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#form-content{
+   width: 80%;
+   margin-top: 100px;
+}
+
+#rightContent{
+    width: 100%;
+}
+
+
+#form-content .nav-pills > li > a{
+    border-radius: 1px;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid transparent;
+    color: rgb(110, 110, 110);
+    background-color: transparent;
+}
+
+#form-content .nav-pills>li.active>a{
+    color: black;
+    border-bottom: 2px solid var(--black);
+}
+
+form{
+    margin-top: 40px;
+}
+
+input{
+    border: 1.5px solid #0170ff !important;
+}
+
+input[type="text"]{
+    background-color: transparent !important;
+    outline: none !important;
+    padding: 20px !important;
+}
+
+input[type="email"]{
+    background-color: transparent !important;
+    outline: none !important;
+    padding: 20px !important;
+    width: 80% !important;
+}
+
+input[type="password"]{
+    background-color: transparent !important;
+    outline: none !important;
+    padding: 20px !important;
+}
+
+.psw{
+    width: 80% !important;
+}
+
+
+label{
+    font-weight: 500px;
+    letter-spacing: 0.5px;
+}
+
+.checkbox{
+    margin-top: 20px !important;
+}
+
+.checkbox a:link{
+    text-decoration: none;
+}
+
+.checkbox a:hover{
+    text-decoration: none;
+}
+
+.checkbox:active{
+    text-decoration: none;
+}
+
+.btn{
+    margin-top: 30px !important;
+}
+
+#submitbtn
+{
+    background-color: var(--primary);
+    padding: 10px;
+    color: white;
+    font-size: 1.6rem;
+    outline: none;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+#logbtn
+{
+    background-color: var(--primary);
+    padding: 10px;
+    color: white;
+    font-size: 1.6rem;
+    outline: none;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    width: 100px;
+}
+
+#logbtn:active{
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+#submitbtn:active{
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+#logTab{
+    margin-left: 20px;
+}
+
+#ps{
+    margin-top: 25px;
+}
+
+.input-group-addon{
+    background-color: transparent !important;
+    border-top: 1.5px solid var(--primary) !important;
+    border-right: 1.5px solid var(--primary) !important;
+    border-bottom: 1.5px solid var(--primary) !important;
+}
+
+#open-eye-1{
+    color: black;
+    cursor: pointer;
+}
+
+#open-eye{
+    color: black;
+    cursor: pointer;
+}
+
+
+/* Responsive start */
+@media only screen and (max-width: 600px) {
+    #leftCol{
+        display: none;
+    }
+    #rightCol{
+        width: 100%;
+    }
+    #headImage{
+        width: 100%;
+        display: block;
+        margin-top: 40px;
+    }
+
+    #form-content .nav-pills > li > a{
+        border-radius: 1px;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        border-bottom: 2px solid transparent;
+        color: rgb(110, 110, 110);
+        background-color: transparent;
+    }
+    form{
+        margin-top: 30px;
+    }
+    #form-content{
+        width: 90%;
+        margin-top: 80px;
+        margin-left: 30px;
+    }
+     
+}
+
+@media only screen and (max-width: 769px){
+    #logTab{
+        margin-left: 10px;
+    }
+    #form-content{
+        width: 100%;
+        margin-top: 80px;
+     }
+}
